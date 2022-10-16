@@ -18,10 +18,6 @@ def refuse_to_edit():
 def get_fields_by_id(id):
     return get_from_table_by_id(fields, id)
 
-@api.route('/coffees', methods=["BREW"])
-def brew_root():
-    return json.dumps({"error": "sorry, I'm a teapot"}), 418
-
 @api.route('/students/<id>', methods=["GET"])
 def get_student_by_id(id):
     return get_from_table_by_id(students, id)

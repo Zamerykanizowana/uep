@@ -12,7 +12,7 @@ def get_companies():
 
 @api.route('/fields')
 def refuse_to_edit():
-    return json.dumps({"error": "no acces to edit fields resources"}), 403
+    return json.dumps({"error": "no access to edit fields resources"}), 403
 
 @api.route("/fields/<id>", methods=['GET'])
 def get_fields_by_id(id):
